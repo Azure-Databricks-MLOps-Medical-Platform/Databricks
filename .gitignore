@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Temp scripts
+_check_job.py
+_check_error.py
+_submit_job.py
+_fetch_results.py
+_print_results.py
+_mlflow_results.json
+
+# Large data (2.3GB images — use Kaggle/DBFS instead)
+data/ref_medical_images/
+data/ref_vital_signs/
+
+# Archive duplicates
+model/_archive_duplicates_*/
+
+# ZIP assets
+*.zip
+
+# MLflow local runs
+result/mlflow/mlruns/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

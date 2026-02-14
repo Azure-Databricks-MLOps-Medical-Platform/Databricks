@@ -1,0 +1,42 @@
+{
+  "tracking_uri": "file:///C:/Users/EL073/Downloads/Microsoft Academy 2nd Project Team Org/Databricks/result/mlflow/mlruns",
+  "experiments": [
+    {
+      "experiment": "P2T2_Medical_AI/Pipeline_Metrics",
+      "run_id": "750d9b56dc5a4939838ece85db52ea00",
+      "run_name": "gold_summary_M00001",
+      "params": {
+        "patient_id": "M00001",
+        "pipeline_stage": "gold",
+        "source_table": "P2T2.gold.patient_clinical_summary"
+      },
+      "metrics": {
+        "avg_diastolic_bp": 86.973,
+        "avg_heart_rate": 105.627,
+        "avg_respiratory_rate": 23.458,
+        "avg_risk_score": 0.227,
+        "avg_spo2": 91.896,
+        "avg_systolic_bp": 136.677,
+        "avg_temperature": 37.958,
+        "max_risk_score": 0.5,
+        "vital_count": 48.0
+      },
+      "status": "FINISHED"
+    },
+    {
+      "experiment": "P2T2_Medical_AI/Clinical_Inference",
+      "run_id": "69682292c40e4f139d0a5c06d7b74699",
+      "run_name": "biomedclip_M00001",
+      "params": {
+        "device": "cpu",
+        "embedding_dim": "512",
+        "image_size": "224x224",
+        "model_name": "BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+        "num_candidates": "10",
+        "patient_id": "M00001"
+      },
+      "metrics": {},
+      "status": "FINISHED"
+    }
+  ]
+}

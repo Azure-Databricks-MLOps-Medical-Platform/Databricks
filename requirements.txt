@@ -1,0 +1,26 @@
+# =============================================
+# Databricks + MLOps Dependencies
+# =============================================
+
+# --- Databricks SDK & Connect ---
+databricks-sdk>=0.38.0
+databricks-connect==15.4.*
+
+# --- Data Processing ---
+pandas>=2.0.0
+pyarrow>=14.0.0
+
+# --- MLflow (MLOps) ---
+mlflow>=2.12.0
+
+# --- AI Inference (BioMedCLIP) ---
+torch>=2.2.0
+open-clip-torch>=2.24.0
+transformers>=4.40.0
+Pillow>=10.0.0
+
+# --- Environment & Config ---
+python-dotenv>=1.0.0
+
+# --- Utilities ---
+requests>=2.31.0

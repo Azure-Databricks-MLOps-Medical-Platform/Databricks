@@ -1,0 +1,110 @@
+[
+  {
+    "stage": "INIT",
+    "detail": "Bronze Layer Ingestion 시작",
+    "timestamp": "2026-02-13T21:04:02.071580",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "BRONZE",
+    "detail": "적재 완료: vital_logs=48, medical_records=5, dicom=1, emergency=1",
+    "timestamp": "2026-02-13T21:04:02.693501",
+    "elapsed_sec": 0.621
+  },
+  {
+    "stage": "INIT",
+    "detail": "Silver Layer Refinement 시작",
+    "timestamp": "2026-02-13T21:04:02.693501",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "SILVER",
+    "detail": "정제 완료: null제거=0, outlier제거=0, dedup=0, risk분포={'Warning': 24, 'Normal': 15, 'Critical': 9}",
+    "timestamp": "2026-02-13T21:04:02.717942",
+    "elapsed_sec": 0.023
+  },
+  {
+    "stage": "INIT",
+    "detail": "Gold Layer Aggregation 시작",
+    "timestamp": "2026-02-13T21:04:02.718484",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "GOLD",
+    "detail": "집계 완료: avg_HR=105.6, avg_SpO2=91.9%, risk=0.500, trend=rising",
+    "timestamp": "2026-02-13T21:04:02.734066",
+    "elapsed_sec": 0.016
+  },
+  {
+    "stage": "INIT",
+    "detail": "BioMedCLIP AI Inference 시작",
+    "timestamp": "2026-02-13T21:04:02.737151",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "AI_ERROR",
+    "detail": "필수 패키지 미설치: No module named 'torch'",
+    "timestamp": "2026-02-13T21:04:02.738180",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "AI_COMPLETE",
+    "detail": "BioMedCLIP 분석 결과 저장 완료",
+    "timestamp": "2026-02-13T21:04:02.741127",
+    "elapsed_sec": 0.002
+  },
+  {
+    "stage": "INIT",
+    "detail": "MLflow Experiment Tracking 시작",
+    "timestamp": "2026-02-13T21:04:02.741631",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "실험 준비: P2T2_Medical_AI/Pipeline_Metrics (ID: 180053352055514179)",
+    "timestamp": "2026-02-13T21:04:23.221003",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "실험 준비: P2T2_Medical_AI/Clinical_Inference (ID: 527634264337503434)",
+    "timestamp": "2026-02-13T21:04:23.253602",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "실험 준비: P2T2_Medical_AI/Judge_Evaluation (ID: 296180994576546864)",
+    "timestamp": "2026-02-13T21:04:23.282327",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "Gold 메트릭 기록 완료 (run_id: 750d9b56dc5a4939838ece85db52ea00)",
+    "timestamp": "2026-02-13T21:04:32.743903",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "BioMedCLIP 실험 기록 완료 (run_id: 69682292c40e4f139d0a5c06d7b74699)",
+    "timestamp": "2026-02-13T21:04:32.924033",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "SOAP JSON 없음 — SOAP 로깅 스킵",
+    "timestamp": "2026-02-13T21:04:32.927001",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW",
+    "detail": "Judge JSON 없음 — Judge 로깅 스킵",
+    "timestamp": "2026-02-13T21:04:32.929657",
+    "elapsed_sec": null
+  },
+  {
+    "stage": "MLFLOW_COMPLETE",
+    "detail": "MLflow 실험 트래킹 완료 (2 runs)",
+    "timestamp": "2026-02-13T21:04:33.195157",
+    "elapsed_sec": 30.454
+  }
+]

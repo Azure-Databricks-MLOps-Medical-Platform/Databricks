@@ -1,0 +1,33 @@
+{
+  "patient_id": "M00001",
+  "patient_name": "Kim Cheolsu",
+  "age": 58,
+  "gender": "Male",
+  "blood_type": "A+",
+  "primary_diagnosis": "Pulmonary TB Exacerbation",
+  "admission_date": "2026-02-08 09:15:00",
+  "admission_type": "Emergency",
+  "data_files": {
+    "emergency": "emergency_data.csv",
+    "medical_history": "medical_history.csv",
+    "vital_signs": "vital_signs_timeseries.csv",
+    "dicom_metadata": "dicom_metadata.csv",
+    "chest_xray_image": "images/M00001_CXR_20260208.jpeg"
+  },
+  "vital_stats_summary": {
+    "initial": {
+      "HR": 118,
+      "BP": "145/92",
+      "SpO2": 88,
+      "Temp": 38.7,
+      "RR": 28
+    },
+    "final": {
+      "HR": 92,
+      "BP": "128/82",
+      "SpO2": 96,
+      "Temp": 37.2,
+      "RR": 18
+    }
+  }
+}

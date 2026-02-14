@@ -1,0 +1,6 @@
+﻿patient_id,record_date,hospital,department,diagnosis,medication,notes
+M00001,2018-03-15,강남세브란스병원,내과,Essential Hypertension (I10),"Amlodipine 5mg, Losartan 50mg","혈압 조절 시작, 정기 외래 추적 관찰"
+M00001,2019-06-22,강남세브란스병원,내분비내과,Type 2 Diabetes Mellitus (E11),Metformin 500mg bid,"HbA1c 7.2%, 경구약 시작"
+M00001,2021-11-10,서울대학교병원,호흡기내과,Pulmonary Tuberculosis (A15.0),"HERZ regimen (Isoniazid, Rifampin, Ethambutol, Pyrazinamide)","AFB smear (+), 6개월 치료 완료 (2022-05-10)"
+M00001,2024-08-20,서울병원,호흡기내과,COPD - Moderate (J44.1),Tiotropium inhaler,"FEV1/FVC 62%, 만성기관지염 증상"
+M00001,2026-02-08,서울대학교병원 응급의료센터,응급의학과,Acute Pulmonary TB Exacerbation (A15.0),"O2 therapy, IV antibiotics, anti-TB regimen restart","CXR: 우상엽 공동성 병변 의심, 객혈 동반, SpO2 88%"
